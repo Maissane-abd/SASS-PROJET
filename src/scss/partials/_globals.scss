@@ -1,0 +1,108 @@
+@use "fonts";
+@use "variables" as v;
+@use "functions" as f;
+@use "sass:color";
+
+@layer base {
+	:root {
+		@each $name, $value in v.$colors {
+			--#{$name}: #{$value};
+			--#{$name}-hover: #{color.scale($value, $lightness: 15%)};
+		}
+
+		--bg-light: var(--white);
+		--bg-dark: var(--black);
+		--text-light: var(--white);
+		--text-dark: var(--black);
+
+		--primary:var(--crunchy-orange);
+	}
+
+	body {
+		font-family: fonts.$font1;
+		color: var(--text-light);
+		background-color: var(--bg-dark);
+		transition: background-color 0.3s ease, color 0.3s ease;
+		height: 100vh;
+
+		html.light & {
+			background-color: var(--bg-light);
+			color: var(--text-dark);
+		  }
+	}
+
+	a {
+		text-decoration: none;
+		transition: color 0.3s ease;
+	  
+		&:hover {
+		  color: var(--primary);
+		}
+	  }
+
+	p {
+		font-size: 1rem;
+		line-height: 1.5;
+	  }
+
+	h1 {
+		font-weight: bold;
+		line-height: 1.2;
+		font-size: 3.5rem;
+		margin-bottom: f.rem(10);
+	   }
+	  
+	  h2  {
+		font-weight: bold;
+		line-height: 1.2;
+		font-size: 3rem;
+		margin-bottom: f.rem(10);
+	   }
+	  
+	  h3 {
+		font-weight: bold;
+		line-height: 1.2;
+		font-size: 2.5rem;
+		margin-bottom: f.rem(10);
+	   }
+		
+	  ul,
+	  ol {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	  }
+	  
+	  label {
+		  margin-top: f.rem(10);
+		  margin-bottom: f.rem(5);
+		  font-weight: bold;
+		  color: var(--text-light);
+		}
+
+	input {
+		padding: f.rem(10);
+		border: 1px solid var(--grey-light);
+		border-radius: f.rem(4);
+		background-color: var(--bg-dark);
+		color: var(--text-light);
+	  }
+
+	  small {
+		font-size: 0.8rem;
+		color: var(--grey);
+		margin-top: f.rem(5);
+		color: var(--text-light);
+	  }
+	
+	@keyframes fadeIn {
+	  from {
+	  opacity: 0;
+	  transform: translateY(f.rem(10));
+	  }
+	  to {
+	  opacity: 1;
+	  transform: translateY(0);
+	  }
+	}
+}
