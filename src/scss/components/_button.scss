@@ -15,7 +15,17 @@
     &:hover {
       background-color: var(--primary-hover);
 	    color: var(--text-dark);
+
+      // html.light & {
+      //   background-color: var(--primary);
+      //   color: var(--text-light);
+      // }
     }
+
+    // html.light & {
+    //   background-color: var(--bg-dark);
+    //   color: var(--text-light);
+    // }
   }
 
   &-secondary {
