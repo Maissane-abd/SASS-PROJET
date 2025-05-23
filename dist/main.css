@@ -209,6 +209,10 @@
     background-color: var(--bg-light);
     color: var(--text-dark);
   }
+  body ::selection {
+    background-color: var(--grey);
+    color: var(--primary);
+  }
   a {
     text-decoration: none;
     transition: color 0.3s ease;
