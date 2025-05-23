@@ -29,7 +29,11 @@
 		color: var(--text-light);
 		background-color: var(--bg-dark);
 		transition: background-color 0.3s ease, color 0.3s ease;
-		height: 100vh;
+		
+
+		@media screen and (min-width: f.screen("desktop-up")) {
+			height: 100vh;
+			   }
 
 		html.light & {
 			background-color: var(--bg-light);
