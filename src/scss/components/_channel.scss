@@ -13,7 +13,6 @@
 
   &__text {
     @include m.flexbox(column, wrap, space-around, center, f.rem(20));
-    margin: 2rem 0;
     text-align: center;
     width: 100%;
   

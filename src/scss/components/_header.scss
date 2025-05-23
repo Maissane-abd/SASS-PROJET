@@ -6,16 +6,14 @@
     @include m.headerReset;
   
     &__container {
-      
-        @media screen and (min-width: f.screen("desktop-up")) {
+      @media screen and (min-width: f.screen("desktop-up")) {
       @include m.flexbox(row, nowrap, space-between, center, f.rem(0));
-     }
+      }
     }
    
     &__left,
-    &__right {
-      
-        @media screen and (min-width: f.screen("desktop-up"))  {
+    &__right {  
+      @media screen and (min-width: f.screen("desktop-up"))  {
         display: flex;
         align-items: center;
       }
@@ -27,7 +25,6 @@
       
       img {
         height: 6rem;
-        padding: 1rem;
       }
     }
     

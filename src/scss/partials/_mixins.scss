@@ -2,86 +2,74 @@
 @use "./variables" as v;
 
 @mixin background-cover {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    height: 60vh;
-    width: 100%;
-    min-height: f.rem(400);
-    margin: 0px auto f.rem(10);
-  }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 60vh;
+  width: 100%;
+  min-height: f.rem(400);
+  margin: 0px auto f.rem(10);
+}
   
-  @mixin background-coverMobile {
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 100%;
-    border-radius: f.rem(6);
-    min-height: f.rem(125); 
-    margin: 0px auto f.rem(20);
-  }
+@mixin background-coverMobile {
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  border-radius: f.rem(6);
+  min-height: f.rem(125); 
+  margin: 0px auto f.rem(20);
+}
   
-  @mixin headerReset {
-    background-color: var(--dark-grey);
-    color: var(--text-color);
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 f.rem(2) f.rem(4) rgba(0, 0, 0, 0.1);
-  }
+@mixin headerReset {
+  background-color: var(--dark-grey);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 f.rem(2) f.rem(4) rgba(0, 0, 0, 0.1);
+}
   
-  @mixin resetAuth {
-    max-width: #{rem(350)};
-      margin: #{rem(60)} auto;
-      padding: #{rem(30)};
-      background: #000;
-      border-radius: #{rem(8)};
-      box-shadow: 0 #{rem(4)} #{rem(20)} rgba(0,0,0,0.1);
-      height: 100%;
-  }
+// @mixin resetAuth {
+//   max-width: #{rem(350)};
+//   margin: #{rem(60)} auto;
+//   padding: #{rem(30)};
+//   background: #000;
+//   border-radius: #{rem(8)};
+//   box-shadow: 0 #{rem(4)} #{rem(20)} rgba(0,0,0,0.1);
+//   height: 100%;
+// }
   
-  @mixin channels-sectionReset {
-    margin: f.rem(0) auto;
-    max-width: f.rem(1200);
-    padding: f.rem(20);
-    color: var(--text-color);
-  }
+@mixin channels-sectionReset {
+  margin: f.rem(0) auto;
+  max-width: f.rem(1200);
+}
   
-  @mixin flexbox($direction, $wrap, $justify, $align, $gap: f.rem(0)) {
-      display: flex;
-      flex-direction: $direction;
-      flex-wrap: $wrap;
-      justify-content: $justify;
-      align-items: $align;
-      gap: $gap;
-  }
+@mixin flexbox($direction, $wrap, $justify, $align, $gap: f.rem(0)) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
   
-  @mixin transition($props...) {
-    transition: $props;
-  }
+@mixin transition($props...) {
+  transition: $props;
+}
   
-  @mixin resetButton {
-    display: inline-block;
-    line-height: 1;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    --padding: f.rem(12) f.rem(24);
-	--margin: f.rem(8) f.rem(4);;
-	padding: var(--padding);
-	margin: var(--margin);
+@mixin resetButton {
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: f.rem(12) f.rem(24);
+  margin: f.rem(8) f.rem(4);
   font-weight: 600;
-  	transition: background-color 0.3s, color 0.3s;
- 	 text-align: center;
- 	 text-transform: none;
-  	text-decoration: none;
-  	display: inline-block;
-    border-radius: f.rem(6);
-  }
-  
-  // @mixin media-min($_key) {
-  //   @media screen and (min-width: map-get(v.$breakpoints, $_key)) {
-  //     & { @content; }
-  //   }
-  // }
+  transition: background-color 0.3s, color 0.3s;
+ 	text-align: center;
+ 	text-transform: none;
+  text-decoration: none;
+  border-radius: f.rem(6);
+}

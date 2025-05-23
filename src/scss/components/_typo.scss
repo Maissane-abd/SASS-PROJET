@@ -3,67 +3,24 @@
 @use "../partials/functions" as f;
 
 .typo {
+  font-size: 1rem; // fallback
 
---primary : white;
---secondary: #f47521;
---third: blue;
+  &-xs { font-size: f.rem(12); }
+  &-sm { font-size: f.rem(14); }
+  &-m  { font-size: f.rem(16); }
+  &-l  { font-size: f.rem(20); }
+  &-xl { font-size: f.rem(32); }
 
---size: f.rem(32) ;
-font-size: (var(--size));
-
-
-  // Modificateurs de couleur
-  &--primary {
-    color: var(--primary);
+  @media screen and (min-width: f.screen("desktop-up")) {
+    &-xs { font-size: f.rem(14); }
+    &-sm { font-size: f.rem(16); }
+    &-m  { font-size: f.rem(18); }
+    &-l  { font-size: f.rem(24); }
+    &-xl { font-size: f.rem(48); }
   }
 
-  &--secondary {
-    color: var(--secondary);
-  }
-
-  &--third {
-    color: var(--third);
-  }
-
-  
-
-  // Tailles
-  &--lg {
-
-    
-    --size: f.rem(32);
-
-    @media screen and (min-width: f.screen("desktop-up")) {
-      --size: f.rem(64);
-    }
- 
-  }
-
-  &--sm {
-    --size: f.rem(10);
-
-    @media screen and (min-width: f.screen("desktop-up")){
-      --size: f.rem(15);
-    }
-  }
-
-  &--m {
-    --size: f.rem(15);
-
-    @media screen and (min-width: f.screen("desktop-up")) {
-      --size: f.rem(20);
-    }
- 
-  }
-
-  &--l {
-    --size: f.rem(444);
-
-    @media screen and (min-width: f.screen("desktop-up")) {
-      --size: f.rem(225);
-    }
-  }
-
-
- 
+  &-primary   { color: white; }
+  &-secondary { color: #f47521; }
+  &-third     { color: blue; }
 }
+
