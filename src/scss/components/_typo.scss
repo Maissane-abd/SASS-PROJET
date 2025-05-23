@@ -1,0 +1,69 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.typo {
+
+--primary : white;
+--secondary: #f47521;
+--third: blue;
+
+--size: f.rem(32) ;
+font-size: (var(--size));
+
+
+  // Modificateurs de couleur
+  &--primary {
+    color: var(--primary);
+  }
+
+  &--secondary {
+    color: var(--secondary);
+  }
+
+  &--third {
+    color: var(--third);
+  }
+
+  
+
+  // Tailles
+  &--lg {
+
+    
+    --size: f.rem(32);
+
+    @media screen and (min-width: f.screen("desktop-up")) {
+      --size: f.rem(64);
+    }
+ 
+  }
+
+  &--sm {
+    --size: f.rem(10);
+
+    @media screen and (min-width: f.screen("desktop-up")){
+      --size: f.rem(15);
+    }
+  }
+
+  &--m {
+    --size: f.rem(15);
+
+    @media screen and (min-width: f.screen("desktop-up")) {
+      --size: f.rem(20);
+    }
+ 
+  }
+
+  &--l {
+    --size: f.rem(444);
+
+    @media screen and (min-width: f.screen("desktop-up")) {
+      --size: f.rem(225);
+    }
+  }
+
+
+ 
+}

@@ -1,0 +1,22 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.hero {
+    text-align: center;
+    
+    @media screen and (min-width: f.screen("desktop-up")){
+      margin-bottom: f.rem(100);
+    }
+    
+    &__banner {
+      @include m.background-coverMobile;
+      background-image: url("../../../assets/WindBreaker-S2C1-KV1-(Character)-Banner-2100x700-FR.png");
+    
+      @media screen and (min-width: f.screen("desktop-up")) {
+        background-image: url("../../../assets/WindBreaker-S2C1-KV1-(Character)-Banner-2100x700-FR.png");
+        aspect-ratio: 100 / 42;
+        @include m.background-cover;
+      }
+    }
+  } 

@@ -1,0 +1,56 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.site-footer {
+    // @include media-min("desktop-up") {}
+    //   background-color: var(--bg-color);
+    //   color: var(--text-color);
+      padding: f.rem(40) f.rem(20);
+    
+      &__container {
+        @include m.flexbox(column, wrap, flex-start, center, f.rem(0)); 
+        text-align: center;
+  
+        @media screen and (min-width: f.screen("desktop-up"))  {
+          max-width: f.rem(1200);
+          margin: 0 auto;
+          display: block;
+        }    
+      }
+    
+      &__columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(f.rem(180), 1fr));
+        gap: f.rem(30);
+      }
+    
+      &__heading {
+        margin-bottom: f.rem(12);
+      }
+    
+      &__list {
+    
+        li {
+          margin-bottom: f.rem(8);
+    
+          a {
+            color: var(--grey-light);
+            @include m.transition(color 0.3s ease);
+    
+            &:hover {
+              color: var(--primary);
+            }
+          }
+        }
+      }
+    
+      &__bottom {
+        margin-top: f.rem(40);
+        text-align: center;
+        border-top: 1px solid var(--grey-light);
+        padding-top: f.rem(20);
+        color: var(--grey);
+      }
+    }
+    

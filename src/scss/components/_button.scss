@@ -35,35 +35,24 @@
     font-size: f.rem(12);
   }
 
-  // Taille S
   &-s {
     padding: f.rem(6) f.rem(12);
     font-size: f.rem(14);
   }
 
-  // Taille M (par défaut ou médium)
   &-m {
     padding: f.rem(10) f.rem(16);
     font-size: f.rem(16);
   }
 
-  // Taille L
   &-l {
     padding: f.rem(14) f.rem(20);
     font-size: f.rem(18);
   }
 
-  // Taille XL
   &-xl {
     padding: f.rem(18) f.rem(24);
     font-size: f.rem(20);
   }
-
-  // Désactivé
-  // &--disabled {
-  //   opacity: 0.6;
-  //   pointer-events: none;
-  // }
 }
-
 }

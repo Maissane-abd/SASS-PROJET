@@ -1,4 +1,4 @@
-@use "functions" as f;
+@use "./functions" as f;
 @use "./variables" as v;
 
 @mixin background-cover {
@@ -7,8 +7,8 @@
     background-position: top;
     height: 60vh;
     width: 100%;
-    min-height: #{rem(400)};
-    margin: 0px auto #{rem(20)};
+    min-height: f.rem(400);
+    margin: 0px auto f.rem(10);
   }
   
   @mixin background-coverMobile {
@@ -17,9 +17,8 @@
     background-position: top;
     width: 100%;
     border-radius: f.rem(6);
-    min-height: #{rem(125)}; 
-    margin: 0px auto #{rem(20)};
-
+    min-height: f.rem(125); 
+    margin: 0px auto f.rem(20);
   }
   
   @mixin headerReset {
@@ -43,9 +42,9 @@
   }
   
   @mixin channels-sectionReset {
-    margin: #{rem(0)} auto;
-    max-width: #{rem(1200)};
-    padding: #{rem(20)};
+    margin: f.rem(0) auto;
+    max-width: f.rem(1200);
+    padding: f.rem(20);
     color: var(--text-color);
   }
   
