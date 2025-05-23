@@ -9,6 +9,7 @@
   &-sm { font-size: f.rem(14); }
   &-m  { font-size: f.rem(16); }
   &-l  { font-size: f.rem(20); }
+  &-xl { font-size: f.rem(26); }
   &-xl { font-size: f.rem(32); }
 
   @media screen and (min-width: f.screen("desktop-up")) {
@@ -16,7 +17,8 @@
     &-sm { font-size: f.rem(16); }
     &-m  { font-size: f.rem(18); }
     &-l  { font-size: f.rem(24); }
-    &-xl { font-size: f.rem(48); }
+    &-xl { font-size: f.rem(36); }
+    &-xxl { font-size: f.rem(48); }
   }
 
   &-primary   { color: white; }

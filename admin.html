@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="./dist/main.css" />
+</head>
+<body>
+      <header class="header">
+        <div class="header__container">
+            <div class="header__left">
+                <a class="header__logo" href="./index.html">
+                    <img src="./assets/Crunchyroll_Logo.svg.png" alt="Logo Crunchyroll" class="p-4">
+                </a>
+    
+            </div>
+    
+            <div class="header__right">
+                <ul class="header__auth-list">
+                  <li ><a href="#" class="typo-primary mr-5">📧 Mail</a></li>
+                  <li ><a href="#" class="typo-primary mr-5">💬 Message</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+      
+
+      <div class="admin-layout">
+        <aside class="admin-sidebar p-5">
+          <nav class="admin-sidebar__nav">
+            <p class="admin-sidebar__user">👤 admin online</p>
+            <input type="text" class="admin-sidebar__search mb-5" placeholder="Rechercher..." />
+      
+            <ul class="admin-sidebar__menu">
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Dashboard</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Utilisateurs</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Commandes</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Paramètres</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Documents</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Mises à jour</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Rapports</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Contrats</a></li>
+              <li class="admin-sidebar__item"><a href="#" class="admin-sidebar__link">Contacts</a></li>
+            </ul>
+          </nav>
+        </aside>
+      
+        <main class="admin-main p-6">
+          <section class="admin-dashboard">
+            <h1 class="admin-dashboard__title typo-xl p-0 m-6">Dashboard</h1>
+            <div class="admin-dashboard__cards">
+              <div class="admin-card">
+                <h2 class="admin-card__title">Utilisateurs</h2>
+                <p class="admin-card__info">153 nouveaux ce mois </p>
+              </div>
+              <div class="admin-card">
+                <h2 class="admin-card__title">Commandes</h2>
+                <p class="admin-card__info">312 traitées</p>
+              </div>
+              <div class="admin-card">
+                <h2 class="admin-card__title">Revenus</h2>
+                <p class="admin-card__info">12 800 €</p>
+              </div>
+              <div class="admin-card">
+                <h2 class="admin-card__title">Notes</h2>
+                <p class="admin-card__info">5443 notes</p>
+              </div>
+              
+              
+            </div>
+          </section>
+      
+          <section class="admin-note mt-9">
+            <h2 class="admin-note__title typo-xl">Brouillon rapide</h2>
+            <form class="admin-note__form">
+              <input type="text" class="admin-note__input" placeholder="Titre" />
+              <textarea class="admin-note__textarea" rows="6" placeholder="Qu'avez-vous en tête ?"></textarea>
+              <button type="submit" class="button button-secondary button-l">Enregistrer le brouillon</button>
+            </form>
+          </section>
+        </main>
+      </div>
+      
+</body>
+</html>
