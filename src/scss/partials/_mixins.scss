@@ -1,0 +1,72 @@
+@mixin background-cover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 60vh;
+    width: 100%;
+    min-height: #{rem(400)};
+    margin: 0px auto #{rem(20)};
+  }
+  
+  @mixin background-coverMobile {
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    min-height: #{rem(125)}; 
+    margin: 0px auto #{rem(20)};
+  }
+  
+  @mixin headerReset {
+    background-color: var(--dark-grey);
+    color: var(--text-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 #{rem(2)} #{rem(4)} rgba(0, 0, 0, 0.1);
+  }
+  
+  @mixin resetAuth {
+    max-width: #{rem(350)};
+      margin: #{rem(60)} auto;
+      padding: #{rem(30)};
+      background: #000;
+      border-radius: #{rem(8)};
+      box-shadow: 0 #{rem(4)} #{rem(20)} rgba(0,0,0,0.1);
+      height: 100%;
+  }
+  
+  @mixin channels-sectionReset {
+    margin: #{rem(0)} auto;
+    max-width: #{rem(1200)};
+    padding: #{rem(20)};
+    color: var(--text-color);
+  }
+  
+  @mixin flexbox($direction, $wrap, $justify, $align, $gap: #{rem(0)}) {
+      display: flex;
+      flex-direction: $direction;
+      flex-wrap: $wrap;
+      justify-content: $justify;
+      align-items: $align;
+      gap: $gap;
+  }
+  
+  @mixin transition($props...) {
+    transition: $props;
+  }
+  
+  @mixin resetButton {
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+      & { @content; }
+    }
+  }
