@@ -7,8 +7,34 @@
     <link rel="stylesheet" href="./dist/main.css">
 </head>
 <body>
-    <button id="darkToggle" class="button button-primary button-sm">Changer thème</button>
-    <button class="button button-secondary button-sm .ml-55">Changer thème</button>
+    <!-- <button id="darkToggle" class="button button-primary button-sm">Changer thème</button> -->
+    <header class="header">
+        <div class="header__container">
+          
+            <div class="header__left">
+                <a class="header__logo" href="./index.html">
+                    <img src="./assets/Crunchyroll_Logo.svg.png" alt="Logo Crunchyroll">
+                </a>
+                           
+                <nav class="header__nav" role="navigation" aria-label="Menu principal">
+                    <ul class="header__nav-list">
+                        <li ><a href="#" class="mr-4 button button-secondary button-l">Nouveau</a></li>
+                        <li ><a href="#" class="mr-4 button button-secondary button-l">Populaire</a></li>
+                        <li ><a href="#" class="mr-4 button button-secondary button-l">Simulcast</a></li>
+                        <li ><a href="#" class="mr-4 button button-secondary button-l">Catégorie</a></li>
+                        <li ><a href="#" id="darkToggle" class="mr-4 button button-secondary button-l">Darkmode</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div class="header__right">
+                <ul class="header__auth-list">
+                    <li><a href="./signup.html" class="mr-4 button button-secondary button-l">S'inscrire</a></li>
+                    <li><a href="./login.html" class="mr-4 button button-secondary button-l">Se connecter</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
     
     <script src="./script.js"></script>
 </body>

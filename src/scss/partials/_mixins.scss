@@ -1,4 +1,5 @@
 @use "functions" as f;
+@use "./variables" as v;
 
 @mixin background-cover {
     background-size: contain;
@@ -28,7 +29,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 #{rem(2)} #{rem(4)} rgba(0, 0, 0, 0.1);
+    box-shadow: 0 f.rem(2) f.rem(4) rgba(0, 0, 0, 0.1);
   }
   
   @mixin resetAuth {
@@ -48,7 +49,7 @@
     color: var(--text-color);
   }
   
-  @mixin flexbox($direction, $wrap, $justify, $align, $gap: #{rem(0)}) {
+  @mixin flexbox($direction, $wrap, $justify, $align, $gap: f.rem(0)) {
       display: flex;
       flex-direction: $direction;
       flex-wrap: $wrap;
@@ -80,8 +81,8 @@
     border-radius: f.rem(6);
   }
   
-  @mixin media-min($_key) {
-    @media screen and (min-width: map-get($breakpoints, $_key)) {
-      & { @content; }
-    }
-  }
+  // @mixin media-min($_key) {
+  //   @media screen and (min-width: map-get(v.$breakpoints, $_key)) {
+  //     & { @content; }
+  //   }
+  // }
