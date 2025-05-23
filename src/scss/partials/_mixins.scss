@@ -1,3 +1,5 @@
+@use "functions" as f;
+
 @mixin background-cover {
     background-size: contain;
     background-repeat: no-repeat;
@@ -13,8 +15,10 @@
     background-repeat: no-repeat;
     background-position: top;
     width: 100%;
+    border-radius: f.rem(6);
     min-height: #{rem(125)}; 
     margin: 0px auto #{rem(20)};
+
   }
   
   @mixin headerReset {
@@ -63,6 +67,17 @@
     text-decoration: none;
     border: none;
     cursor: pointer;
+    --padding: f.rem(12) f.rem(24);
+	--margin: f.rem(8) f.rem(4);;
+	padding: var(--padding);
+	margin: var(--margin);
+  font-weight: 600;
+  	transition: background-color 0.3s, color 0.3s;
+ 	 text-align: center;
+ 	 text-transform: none;
+  	text-decoration: none;
+  	display: inline-block;
+    border-radius: f.rem(6);
   }
   
   @mixin media-min($_key) {

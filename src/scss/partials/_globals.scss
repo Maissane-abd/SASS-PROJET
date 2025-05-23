@@ -15,7 +15,10 @@
 		--text-light: var(--white);
 		--text-dark: var(--black);
 
+		--main-radius: f.rem(6);
+
 		--primary:var(--crunchy-orange);
+		--primary-hover:var(--crunchy-orange-hover);
 	}
 
 	body {

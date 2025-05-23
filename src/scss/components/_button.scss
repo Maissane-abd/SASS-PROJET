@@ -1,0 +1,50 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+@layer components {
+
+.button {
+	@include m.resetButton;
+
+  // Modificateurs de couleur
+  &-primary {
+    background-color: var(--primary);
+    color: var(--text-dark);
+
+    &:hover {
+      background-color: var(--primary-hover);
+	    color: var(--text-dark);
+    }
+  }
+
+  &-secondary {
+    background-color: var(--bg-dark); 
+    color: var(--text-light);
+	  border: 1px solid var(--primary);
+
+    &:hover {
+      background-color: var(--bg-light); 
+      color: var(--text-dark);
+    }
+  }
+
+  // Tailles
+  &-lg {
+    padding: f.rem(32) f.rem(48);
+    font-size: f.rem(18);
+  }
+
+  &-sm {
+    padding: f.rem(4) f.rem(6);
+    font-size: f.rem(14);
+  }
+
+  // Désactivé
+  // &--disabled {
+  //   opacity: 0.6;
+  //   pointer-events: none;
+  // }
+}
+
+}
