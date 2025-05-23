@@ -2,24 +2,25 @@
 @use "./variables" as v;
 
 @mixin background-cover {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 60vh;
-  width: 100%;
-  min-height: f.rem(400);
-  margin: 0px auto f.rem(10);
-}
-  
-@mixin background-coverMobile {
   background-size: contain; 
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center top;
   width: 100%;
-  border-radius: f.rem(6);
-  min-height: f.rem(125); 
-  margin: 0px auto f.rem(20);
+  height: auto;
+  min-height: f.rem(300); 
+  aspect-ratio: 2100 / 700; 
 }
+
+  
+@mixin background-coverMobile {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center ;
+  width: 100%;
+  min-height: f.rem(200); 
+  aspect-ratio: 2100 / 700;
+}
+
   
 @mixin headerReset {
   background-color: var(--dark-grey);

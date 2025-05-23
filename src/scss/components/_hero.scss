@@ -14,8 +14,6 @@
       background-image: url("../../../assets/WindBreaker-S2C1-KV1-(Character)-Banner-2100x700-FR.png");
     
       @media screen and (min-width: f.screen("desktop-up")) {
-        background-image: url("../../../assets/WindBreaker-S2C1-KV1-(Character)-Banner-2100x700-FR.png");
-        aspect-ratio: 100 / 42;
         @include m.background-cover;
       }
     }
