@@ -34,10 +34,18 @@
       a {
         color: var(--grey-light);
         @include m.transition(color 0.3s ease);
-    
         &:hover {
           color: var(--primary);
         }
+
+        html.light & {
+        
+          color: var(--grey);
+
+          &:hover {
+            color: var(--primary);
+          }
+		    } 
       }
     }
   }

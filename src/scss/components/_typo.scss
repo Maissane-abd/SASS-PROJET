@@ -24,4 +24,12 @@
   &-primary   { color: white; }
   &-secondary { color: #f47521; }
   &-third     { color: blue; }
+  &-bg { color:#08090B; }
+
+  html.light & {
+    &-primary   { color: black; }
+    &-secondary { color: black; }
+    &-bg { color:var(--grey-light); }
+  }
+
 }

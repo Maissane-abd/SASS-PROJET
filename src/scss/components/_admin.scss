@@ -12,10 +12,15 @@
     @media screen and (min-width: f.screen("desktop-up")) {
         display: block;
         background-color: var(--dark-grey);
-        color: var(--text-light);
+        // color: var(--text-light);
         position: sticky;
         top: 0;
         height: 100vh;
+
+        html.light & {
+			background-color: var(--bg-light);
+			color: var(--text-dark);
+		  }
     
         &__user {
             font-weight: bold;
@@ -24,6 +29,10 @@
         &__search {
             width: 80%;       
             border: none;
+
+            html.light & {
+                border: 1px solid var(--grey);
+              }
         }
     
         &__item {
@@ -41,6 +50,16 @@
             &:hover {
                 background-color: var(--darkGrey);
             }
+
+            html.light & {
+                background-color: var(--bg-light);
+                color: var(--text-dark);
+
+                &:hover {
+                    background-color: var(--dark-grey);
+                    color: var(--text-light);
+                }
+              }
         }
     }
 }
@@ -48,6 +67,12 @@
 .admin-main {
     flex: 1;
     background-color: var(--grey);
+
+    html.light & {
+        background-color: var(--grey-light);
+        
+      }
+    
 }
   
 .admin-dashboard {
@@ -85,20 +110,20 @@
     }
 }
   
-  .admin-note {
-    width: f.rem(350);
+.admin-note {
+width: f.rem(350);
   
     &__form {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
     }
   
     &__input,
     &__textarea {
-      border-radius: f.rem(6);
-      border: 1px solid var(--grey-light);
-      background-color: var(--bg-light);
+        border-radius: f.rem(6);
+        border: 1px solid var(--grey-light);
+        background-color: var(--bg-light);
     }
 }
   

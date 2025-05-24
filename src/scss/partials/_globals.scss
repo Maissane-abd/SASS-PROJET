@@ -20,7 +20,8 @@
 		--primary:var(--crunchy-orange);
 		--primary-hover:var(--crunchy-orange-hover);
 
-		--bg-header:var(--noir-header);
+		--bg-header:var(--noir-header);		
+		
 	}
 
 	body {
@@ -100,6 +101,11 @@
 			outline: none;
     		border-color: var(--primary); 
 		}
+
+		html.light & {
+			border: 1px solid var(--grey);
+			background-color: transparent;
+			  } 
 	  }
 
 	  input[type="checkbox"] {
@@ -123,9 +129,12 @@
 
 	  small {
 		font-size: 0.8rem;
-		color: var(--grey);
 		margin-top: f.rem(5);
 		color: var(--text-light);
+
+		html.light & {
+			color: var(--text-dark);
+		  } 
 	  }
 	
 	@keyframes fadeIn {

@@ -4,11 +4,20 @@
 
 .header {
     @include m.headerReset;
+
+    // html.light & {
+		// 	background-color: var(--grey-light);
+		// 	color: var(--text-dark);
+		// }
    
-  
     &__container {
       @media screen and (min-width: f.screen("desktop-up")) {
       @include m.flexbox(row, nowrap, space-between, center, f.rem(0));
+    //   html.light & {
+		// 	background-color: var(--grey-light);
+		// 	color: var(--text-dark);
+		// }
+   
       }
     }
    
@@ -17,6 +26,8 @@
       @media screen and (min-width: f.screen("desktop-up"))  {
         display: flex;
         align-items: center;
+
+        
       }
     }
     
@@ -28,14 +39,11 @@
         height: 6rem;
       }
     }
-  
     
     &__nav-list,
     &__auth-list {
       display: none;
 
-      
-      
       @media screen and (min-width: f.screen("desktop-up"))  {
         display: flex;
         list-style: none;
@@ -44,12 +52,18 @@
       }
 
       a {
-        // padding: 30px;
 
         &:hover {
           background-color: var(--bg-dark);
           color:var(--primary-hover) ;
         }
+
+        html.light & {
+          &:hover {
+            background-color: transparent;
+            color:var(--primary-hover) ;
+          }
+		    } 
       }
     }
   }
