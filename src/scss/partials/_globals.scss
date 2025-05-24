@@ -20,7 +20,8 @@
 		--primary:var(--crunchy-orange);
 		--primary-hover:var(--crunchy-orange-hover);
 
-		--bg-header:var(--noir-header);		
+		--bg-header:var(--noir-header);	
+		--grey-light: var(--grey-medium);	
 		
 	}
 
@@ -90,6 +91,7 @@
 		  color: var(--grey-light)
 		}
 
+	
 	input {
 		padding: f.rem(10);
 		border: 1px solid var(--grey-light);

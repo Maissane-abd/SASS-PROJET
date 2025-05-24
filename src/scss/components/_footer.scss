@@ -22,10 +22,6 @@
     gap: f.rem(30);
   }
     
-  &__heading {
-    margin-bottom: f.rem(12);
-  }
-    
   &__list {
     
     li {
@@ -39,7 +35,6 @@
         }
 
         html.light & {
-        
           color: var(--grey);
 
           &:hover {
@@ -51,10 +46,8 @@
   }
     
   &__bottom {
-    margin-top: f.rem(40);
     text-align: center;
     border-top: 1px solid var(--grey-light);
-    padding-top: f.rem(20);
     color: var(--grey);
   }
 }

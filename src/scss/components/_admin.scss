@@ -12,13 +12,13 @@
     @media screen and (min-width: f.screen("desktop-up")) {
         display: block;
         background-color: var(--dark-grey);
-        // color: var(--text-light);
         position: sticky;
         top: 0;
         height: 100vh;
+        max-width: f.rem(250);
 
         html.light & {
-			background-color: var(--bg-light);
+			background-color: var(--grey-light);
 			color: var(--text-dark);
 		  }
     
@@ -90,12 +90,18 @@
     padding: 1rem;
     box-shadow: 0 f.rem(2) f.rem(6) rgba(0, 0, 0, 0.05);
     color: var(--text-dark);
-    width: 100%;
+    width: f.rem(300);
     min-width: 0; 
     word-wrap: break-word;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    html.light & {
+        background-color: transparent;
+        color: var(--text-dark);
+        border: 1px solid var(--black);
+      } 
   
     &__title {
       font-size: 1.2rem;
@@ -124,6 +130,8 @@ width: f.rem(350);
         border-radius: f.rem(6);
         border: 1px solid var(--grey-light);
         background-color: var(--bg-light);
+        color: var(--text-dark);
+        outline: none;    
     }
 }
   
