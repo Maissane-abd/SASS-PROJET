@@ -24,6 +24,7 @@
   &-primary   { color: white; }
   &-secondary { color: #f47521; }
   &-third     { color: blue; }
+  &-fourth     { color: grey; }
   &-bg { background-color:var(--bg-header); }
 
   html.light & {

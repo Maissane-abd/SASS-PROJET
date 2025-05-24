@@ -908,6 +908,9 @@
 .typo-third {
   color: blue;
 }
+.typo-fourth {
+  color: grey;
+}
 .typo-bg {
   background-color: var(--bg-header);
 }
@@ -970,11 +973,6 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
 
 .hero {
   text-align: center;
-}
-@media screen and (min-width: 1024px) {
-  .hero {
-    margin-bottom: 6.25rem;
-  }
 }
 .hero__banner {
   background-size: contain;
@@ -1046,9 +1044,6 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
   transform: scale(1.05);
 }
 
-.site-footer {
-  padding: 2.5rem 1.25rem;
-}
 .site-footer__container {
   display: flex;
   flex-direction: column;
@@ -1227,6 +1222,12 @@ html.light .admin-card {
   background-color: var(--bg-light);
   color: var(--text-dark);
   outline: none;
+}
+
+.popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

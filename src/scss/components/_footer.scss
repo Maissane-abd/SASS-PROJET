@@ -3,7 +3,6 @@
 @use "../partials/functions" as f;
 
 .site-footer {
-  padding: f.rem(40) f.rem(20);
     
   &__container {
     @include m.flexbox(column, wrap, flex-start, center, f.rem(0)); 
