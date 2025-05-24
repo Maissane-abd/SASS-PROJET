@@ -7,7 +7,7 @@
 .button {
 	@include m.resetButton;
 
-  // Modificateurs de couleur
+  // Couleurs
   &-primary {
     background-color: var(--primary);
     color: var(--text-dark);
@@ -15,17 +15,11 @@
     &:hover {
       background-color: var(--primary-hover);
 	    color: var(--text-dark);
-
-      // html.light & {
-      //   background-color: var(--primary);
-      //   color: var(--text-light);
-      // }
     }
 
-    // html.light & {
-    //   background-color: var(--bg-dark);
-    //   color: var(--text-light);
-    // }
+    html.light & {
+      color: var(--text-light);
+    } 
   }
 
   &-secondary {
@@ -42,6 +36,11 @@
       background-color: transparent;
       color: var(--text-dark);
       border: 1px solid var(--black);
+
+      &:hover {
+        background-color: var(--bg-dark); 
+        color: var(--text-light);
+      }
     } 
   }
 

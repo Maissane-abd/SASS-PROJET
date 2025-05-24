@@ -815,6 +815,9 @@
     background-color: var(--primary-hover);
     color: var(--text-dark);
   }
+  html.light .button-primary {
+    color: var(--text-light);
+  }
   .button-secondary {
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -828,6 +831,10 @@
     background-color: transparent;
     color: var(--text-dark);
     border: 1px solid var(--black);
+  }
+  html.light .button-secondary:hover {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
   }
   .button-xs {
     padding: 0.25rem 0.5rem;
