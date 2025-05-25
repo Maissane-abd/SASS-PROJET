@@ -25,12 +25,14 @@
   &-secondary { color: #f47521; }
   &-third     { color: blue; }
   &-fourth     { color: grey; }
+  &-green     { color: #19AA79; }
   &-bg { background-color:var(--bg-header); }
 
   html.light & {
     &-primary   { color: black; }
     &-secondary { color: black; }
     &-bg { background-color: var(--grey-light); }
+    &-green     { color: black; }
   }
 
 }

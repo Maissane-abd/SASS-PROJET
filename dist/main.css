@@ -920,6 +920,9 @@
 .typo-fourth {
   color: grey;
 }
+.typo-green {
+  color: #19AA79;
+}
 .typo-bg {
   background-color: var(--bg-header);
 }
@@ -931,6 +934,9 @@ html.light .typo-secondary {
 }
 html.light .typo-bg {
   background-color: var(--grey-light);
+}
+html.light .typo-green {
+  color: black;
 }
 
 .header {
