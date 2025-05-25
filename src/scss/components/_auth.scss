@@ -5,6 +5,8 @@
 .auth {
     &__container {
      @include m.resetAuth;
+     text-align: center;
+     
  }
  
    &__title {
@@ -15,16 +17,14 @@
      display: flex;
      flex-direction: column;
    }
- 
-   &__text {
-    display: flex;
-     text-align: center;
-     align-items: center;
-   }
 
    &__check {
 
     display: flex;
     align-items: center;
+   }
+
+   label {
+    text-align: start;
    }
  }

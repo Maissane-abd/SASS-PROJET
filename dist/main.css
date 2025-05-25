@@ -1101,6 +1101,7 @@ html.light .site-footer__list li a:hover {
   margin: 0rem auto;
   border-radius: 0.5rem;
   height: 100%;
+  text-align: center;
 }
 .auth__title {
   text-align: center;
@@ -1109,14 +1110,12 @@ html.light .site-footer__list li a:hover {
   display: flex;
   flex-direction: column;
 }
-.auth__text {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
 .auth__check {
   display: flex;
   align-items: center;
+}
+.auth label {
+  text-align: start;
 }
 
 .admin-layout {
