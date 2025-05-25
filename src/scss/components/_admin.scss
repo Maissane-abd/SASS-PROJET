@@ -70,14 +70,11 @@
     background-color: var(--grey);
 
     html.light & {
-        background-color: var(--grey-light);
-        
+        background-color: var(--grey-light);   
       }
-    
 }
   
 .admin-dashboard {
-    
     &__cards {
       display: grid;
       gap: 1rem;
@@ -91,7 +88,6 @@
     padding: 1rem;
     box-shadow: 0 f.rem(2) f.rem(6) rgba(0, 0, 0, 0.05);
     color: var(--text-dark);
-    // width: f.rem(200);
     min-width: 0; 
     word-wrap: break-word;
     display: flex;
@@ -118,7 +114,7 @@
 }
   
 .admin-note {
-width: f.rem(350);
+    width: f.rem(350);
   
     &__form {
         display: flex;

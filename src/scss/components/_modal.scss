@@ -28,7 +28,6 @@
     } 
   }
 
-
   &__close {
     position: absolute;
     top: f.rem(10);
@@ -36,7 +35,6 @@
     font-size: f.rem(30);
     cursor: pointer;
   }
-  
 
   &__summary {
     color: var(--grey-light);

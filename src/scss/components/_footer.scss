@@ -3,7 +3,7 @@
 @use "../partials/functions" as f;
 
 .site-footer {
-    
+  
   &__container {
     @include m.flexbox(column, wrap, flex-start, center, f.rem(0)); 
     text-align: center;

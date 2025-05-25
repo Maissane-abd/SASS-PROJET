@@ -22,37 +22,33 @@
 
 		--bg-header:var(--noir-header);	
 		--grey-light: var(--grey-medium);	
-		
 	}
 
 	body {
-
 		font-family: fonts.$font1;
 		color: var(--text-light);
 		background-color: var(--bg-dark);
 		transition: background-color 0.3s ease, color 0.3s ease;
 		
-
 		@media screen and (min-width: f.screen("desktop-up")) {
 			height: 100vh;
-			   }
+		}
 
 		html.light & {
 			background-color: var(--bg-light);
 			color: var(--text-dark);
-		  }
+		 }
 
-		  ::selection {
+		::selection {
 			background-color: var(--grey);
 			color: var(--primary);
-		  }
-		  
+		}  
 	}
 
 	a {
 		text-decoration: none;
 		transition: color 0.3s ease;
-		color: (--text-light);
+		color: var(--text-light);
 	  }
 
 	p {
@@ -62,25 +58,25 @@
 
 	h1 {
 		line-height: 1.2;
-		font-size: 3.5rem;
+		font-size: f.rem(56);
 	   }
 	  
-	  h2  {
+	h2 {
 		line-height: 1.2;
-		font-size: 3rem;
+		font-size: f.rem(48);
 	   }
 	  
-	  h3 {
+	h3 {
 		line-height: 1.2;
-		font-size: 2.5rem;
+		font-size: f.rem(40);
 	   }
 		
-	  ul,
-	  ol {
+	ul,
+	ol {
 		list-style: none;
 		padding: 0;
 		margin: 0;
-	  }
+	}
 
 	select {
 		background-color: var(--bg-dark);
@@ -98,13 +94,12 @@
 		html.light & {
 			border: 1px solid var(--grey);
 			background-color: transparent;
-			  } 
+		} 
 	}
 	  
 	label {
 		color: var(--grey-light)
 	}
-
 	
 	input {
 		padding: f.rem(10);
@@ -122,9 +117,9 @@
 			border: 1px solid var(--grey);
 			background-color: transparent;
 			  } 
-	  }
+	}
 
-	  input[type="checkbox"] {
+	input[type="checkbox"] {
         appearance: none;
         width: f.rem(10);
         height: f.rem(10);
@@ -141,14 +136,14 @@
           background-position: center;
           background-size: f.rem(16);
         }
-      }
+    }
 
-	  small {
+	small {
 		color: var(--text-light);
 		html.light & {
 			color: var(--text-dark);
 		  } 
-	  }
+	}
 	
 	@keyframes fadeIn {
 	  from {

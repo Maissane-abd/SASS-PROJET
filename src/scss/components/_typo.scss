@@ -3,7 +3,6 @@
 @use "../partials/functions" as f;
 
 .typo {
-  font-size: 1rem; // fallback
 
   &-xs { font-size: f.rem(12); }
   &-sm { font-size: f.rem(14); }

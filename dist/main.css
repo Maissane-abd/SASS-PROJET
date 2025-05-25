@@ -221,7 +221,7 @@
   a {
     text-decoration: none;
     transition: color 0.3s ease;
-    color: --text-light;
+    color: var(--text-light);
   }
   p {
     font-size: 1rem;
@@ -866,9 +866,6 @@
     padding: 1.125rem 1.5rem;
     font-size: 1.25rem;
   }
-}
-.typo {
-  font-size: 1rem;
 }
 .typo-xs {
   font-size: 0.75rem;
