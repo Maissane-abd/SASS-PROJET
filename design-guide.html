@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./dist/main.css">
 </head>
 <body>
-    <h1>Design Guide</h1>
+    <h1 >Design Guide</h1>
     <section>
         <h2>.button</h2>
         <p><a href="#" class="button button-primary button-xl" id="darkToggle">Darkbutton</a>
@@ -166,26 +166,45 @@
     <section>
         <h2>.auth</h2>
         <div class="auth">
-            <div class="auth__container p-4 mt-12">
-              <p class="auth__title typo typo-primary typo-l">Se connecter</p>
-              <form class="auth__form">
-                <label for="email">Adresse e-mail</label>
-                <input type="email" id="email" name="email" required class="mb-2">
-        
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" minlength="6" required class="mb-2">
-        
-                
-                
-        
-                <button type="submit" class="button button-primary button-l mt-12">Se connecter</button>
-              </form>
-        
-              <p class="auth__text">
-                Vous n'avez pas de compte ?
-                <a href="./signup.html" class="button button-secondary button-s">Créer un compte</a>
-              </p>
-            </div>
+          <div class="auth__container p-5">
+            <h2 class="auth__title typo typo-primary typo-l">Créer un compte</h2>
+            <form class="auth__form">
+              <label class="pt-3 pb-1" for="email">Adresse e-mail</label>
+              <input type="email" id="email" name="email" required class="mb-2">
+      
+      
+              <label class="pt-3 pb-1" for="gender">Genre</label>
+                <select id="gender" name="gender" class="auth__select mb-2 p-3">
+                  <option value="">-- Choisissez votre genre --</option>
+                  <option value="homme">Homme</option>
+                  <option value="femme">Femme</option>
+                  <option value="autre">Autre</option>
+                </select>
+      
+      
+              <label class="pt-3 pb-1" for="password">Mot de passe</label>
+              <input type="password" id="password" name="password" minlength="6" required class="mb-2">
+      
+              <div class="auth__check mt-4 mb-4">
+                <input type="checkbox" id="offers" name="offers" class="p-2">
+                <label class="typo-xs ml-2" for="offers">Envoyez-moi offres et actus</label>
+              </div>
+              
+      
+              <button type="submit" class="button button-primary button-l">Créer un compte</button>
+            </form>
+      
+            <p class="auth__text typo-xs">
+              Vous avez déjà un compte ?
+              <a href="./login.html" class="button button-secondary button-xs p-2 ml-2">SE CONNECTER</a>
+            </p>
+      
+            <small class="typo-xs">
+              En créant un compte, vous acceptez nos
+              <a href="#" class="typo-third">Conditions</a> et notre
+              <a href="#" class="typo-third">Politique de confidentialité</a>, et vous confirmez être âgé d'au moins 16 ans.
+            </small>
+          </div>
           </div>
     </section>
     <hr/>
@@ -213,55 +232,23 @@
     </section>
     <hr/>
     <section>
-        <h2>.admin-dashboard (grid)</h2>
-        <div class="admin-dashboard">
-            <h1 class="admin-dashboard__title typo-xl p-0 m-6">Dashboard</h1>
-            <div class="admin-dashboard__cards">
-              <div class="admin-card">
-                <h2 class="admin-card__title">Utilisateurs</h2>
-                <p class="admin-card__info">153 nouveaux ce mois </p>
-              </div>
-              <div class="admin-card">
-                <h2 class="admin-card__title">Commandes</h2>
-                <p class="admin-card__info">312 traitées</p>
-              </div>
-              <div class="admin-card">
-                <h2 class="admin-card__title">Revenus</h2>
-                <p class="admin-card__info">12 800 €</p>
-              </div>
-              <div class="admin-card">
-                <h2 class="admin-card__title">Notes</h2>
-                <p class="admin-card__info">5443 notes</p>
-              </div>
-              
-              
-            </div>
+        <h2>.popular__card</h2>
+        <div class="popular__card p-0">
+          <a href=""><img src="./assets/anime2.jpg" alt="One Piece" class="popular__image"></a>
+          <h3 class="popular__name typo-m m-1">One Piece</h3>
+          <p class="popular__version typo-xs m-1 typo-fourth">VOSTFR / VF</p>
+          <a href="#" class="button button-s button-secondary">Regarder</a>
         </div>
-    </section>
-    <hr/>
-    <section>
-        <h2>.admin-card</h2>
-        <div class="admin-card">
-            <h2 class="admin-card__title">Utilisateurs</h2>
-            <p class="admin-card__info">153 nouveaux ce mois </p>
+
+        <div class="modal" id="anime-modal">
+          <div class="modal__content p-7">
+            <span class="modal__close typo-primary">&times;</span>
+            <h3 id="modal-title" class="modal__title typo-l m-2 typo-primary"></h3>
+            <p id="modal-summary" class="modal__summary mb-2 typo-primary"></p>
+            <p id="modal-rating" class="modal__rating typo-secondary"></p>
           </div>
+        </div>  
     </section>
-    <hr/>
-    <section>
-        <h2>.admin-note</h2>
-        <div class="admin-note mt-9">
-            <h2 class="admin-note__title typo-xl">Brouillon rapide</h2>
-            <form class="admin-note__form">
-              <input type="text" class="admin-note__input" placeholder="Titre" />
-              <textarea class="admin-note__textarea" rows="6" placeholder="Qu'avez-vous en tête ?"></textarea>
-              <button type="submit" class="button button-secondary button-l">Enregistrer le brouillon</button>
-            </form>
-        </div>
-    </section>
-
-    
-
-    
     <script src="./script.js"></script>
 </body>
 </html>
