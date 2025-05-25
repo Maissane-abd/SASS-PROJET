@@ -16,7 +16,7 @@
       font-weight: bold;
       cursor: pointer;
       transition: color 0.3s;
-      @include m.flexbox( $justify: center, $align: center);
+      @include m.flexbox( $justify: space-between, $align: center);
       // display: flex;
       // justify-content: space-between;
       // align-items: center;
