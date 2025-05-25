@@ -988,7 +988,6 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  min-height: 12.5rem;
   aspect-ratio: 2100/700;
   background-image: url("../../../assets/WindBreaker-S2C1-KV1-(Character)-Banner-2100x700-FR.png");
 }
@@ -1004,10 +1003,6 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
   }
 }
 
-.channels-section {
-  margin: 0rem auto;
-  max-width: 75rem;
-}
 @media screen and (min-width: 1024px) {
   .channels-section__container {
     display: flex;

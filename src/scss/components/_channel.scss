@@ -3,7 +3,6 @@
 @use "../partials/functions" as f;
 
 .channels-section {
-  @include m.channels-sectionReset;
     
   &__container {  
     @media screen and (min-width: f.screen("desktop-up")) {
