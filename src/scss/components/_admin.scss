@@ -9,17 +9,18 @@
   
 .admin-sidebar {
     display: none;
+    z-index: 1;
 
     @media screen and (min-width: f.screen("desktop-up")) {
         display: block;
-        background-color: var(--dark-grey);
+        // background-color: var(--dark-grey);
         position: sticky;
         top: 0;
         height: 100vh;
         max-width: f.rem(250);
 
         html.light & {
-			background-color: var(--grey-light);
+			
 			color: var(--text-dark);
 		  }
     
@@ -38,6 +39,7 @@
     
         &__item {
             margin-bottom: 0.75rem;
+            text-align: start;
         }
     
         &__link {
@@ -53,7 +55,7 @@
             }
 
             html.light & {
-                background-color: var(--bg-light);
+                background-color: transparent;
                 color: var(--text-dark);
 
                 &:hover {
@@ -67,12 +69,7 @@
   
 .admin-main {
     flex: 1;
-    background-color: var(--grey);
-
-    html.light & {
-        background-color: var(--grey-light);   
-      }
-}
+ }
   
 .admin-dashboard {
     &__cards {
@@ -96,8 +93,8 @@
     // align-items: center;
 
     html.light & {
-        background-color: transparent;
-        color: var(--text-dark);
+        // background-color: transparent;
+        // color: var(--text-dark);
         border: 1px solid var(--black);
       } 
   

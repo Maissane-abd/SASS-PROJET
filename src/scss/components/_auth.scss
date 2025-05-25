@@ -23,7 +23,11 @@
     align-items: center;
    }
 
-   label {
+   label, select {
     text-align: start;
+
+    html.light &{
+      color: var(--text-dark);
+    }
    }
  }

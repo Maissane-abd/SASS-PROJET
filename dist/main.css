@@ -923,6 +923,15 @@
 .typo-bg {
   background-color: var(--bg-header);
 }
+.typo-nav-admin {
+  background-color: #08090B;
+}
+.typo-side-admin {
+  background-color: #1A1A1A;
+}
+.typo-bg-admin {
+  background-color: #6C757D;
+}
 html.light .typo-primary {
   color: black;
 }
@@ -934,6 +943,15 @@ html.light .typo-bg {
 }
 html.light .typo-green {
   color: black;
+}
+html.light .typo-nav-admin {
+  background-color: #FFFFFF;
+}
+html.light .typo-side-admin {
+  background-color: #ffba6b;
+}
+html.light .typo-bg-admin {
+  background-color: #f3f6f7;
 }
 
 .header {
@@ -1124,8 +1142,11 @@ html.light .site-footer__list li a:hover {
   display: flex;
   align-items: center;
 }
-.auth label {
+.auth label, .auth select {
   text-align: start;
+}
+html.light .auth label, html.light .auth select {
+  color: var(--text-dark);
 }
 
 .admin-layout {
@@ -1135,18 +1156,17 @@ html.light .site-footer__list li a:hover {
 
 .admin-sidebar {
   display: none;
+  z-index: 1;
 }
 @media screen and (min-width: 1024px) {
   .admin-sidebar {
     display: block;
-    background-color: var(--dark-grey);
     position: sticky;
     top: 0;
     height: 100vh;
     max-width: 15.625rem;
   }
   html.light .admin-sidebar {
-    background-color: var(--grey-light);
     color: var(--text-dark);
   }
   .admin-sidebar__user {
@@ -1161,6 +1181,7 @@ html.light .site-footer__list li a:hover {
   }
   .admin-sidebar__item {
     margin-bottom: 0.75rem;
+    text-align: start;
   }
   .admin-sidebar__link {
     color: var(--text-light);
@@ -1174,7 +1195,7 @@ html.light .site-footer__list li a:hover {
     background-color: var(--darkGrey);
   }
   html.light .admin-sidebar__link {
-    background-color: var(--bg-light);
+    background-color: transparent;
     color: var(--text-dark);
   }
   html.light .admin-sidebar__link:hover {
@@ -1185,10 +1206,6 @@ html.light .site-footer__list li a:hover {
 
 .admin-main {
   flex: 1;
-  background-color: var(--grey);
-}
-html.light .admin-main {
-  background-color: var(--grey-light);
 }
 
 .admin-dashboard__cards {
@@ -1213,8 +1230,6 @@ html.light .admin-main {
   gap: 0;
 }
 html.light .admin-card {
-  background-color: transparent;
-  color: var(--text-dark);
   border: 1px solid var(--black);
 }
 .admin-card__title {
