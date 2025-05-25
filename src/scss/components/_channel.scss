@@ -6,12 +6,14 @@
     
   &__container {  
     @media screen and (min-width: f.screen("desktop-up")) {
-      @include m.flexbox(row, column, flex-start, center, f.rem(40));
+      // @include m.flexbox(row, column, flex-start, center, f.rem(40));
+      @include m.flexbox($direction: row, $wrap: column, $justify: flex-start, $align:center, $gap: f.rem(40));
     }
   }
 
   &__text {
-    @include m.flexbox(column, wrap, space-around, center, f.rem(20));
+    // @include m.flexbox(column, wrap, space-around, center, f.rem(20));
+    @include m.flexbox($direction: column, $wrap: wrap, $justify: space-around, $align:center, $gap: f.rem(20));
     text-align: center;
     width: 100%;
   

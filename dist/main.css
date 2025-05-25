@@ -956,12 +956,20 @@ html.light .typo-green {
 @media screen and (min-width: 1024px) {
   .header__left, .header__right {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
+    gap: 0;
   }
 }
 .header__logo {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: stretch;
+  gap: 0;
 }
 .header__logo img {
   height: 6rem;
@@ -1107,6 +1115,10 @@ html.light .site-footer__list li a:hover {
 .auth__form {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
 }
 .auth__check {
   display: flex;
@@ -1195,7 +1207,10 @@ html.light .admin-main {
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  gap: 0;
 }
 html.light .admin-card {
   background-color: transparent;
@@ -1219,6 +1234,9 @@ html.light .admin-card {
 .admin-note__form {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 0.75rem;
 }
 .admin-note__input, .admin-note__textarea {
@@ -1231,7 +1249,10 @@ html.light .admin-card {
 
 .popular__list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 2.25rem;
 }
 
@@ -1251,8 +1272,11 @@ html.light .admin-card {
   cursor: pointer;
   transition: color 0.3s;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
+  gap: 0;
 }
 .faq__question:hover {
   color: var(--primary);

@@ -13,8 +13,9 @@
    }
  
    &__form {
-     display: flex;
-     flex-direction: column;
+    @include m.flexbox($direction: column);
+    //  display: flex;
+    //  flex-direction: column;
    }
 
    &__check {

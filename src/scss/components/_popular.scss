@@ -1,10 +1,10 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
+@use "../partials/mixins" as m;
+
 
 .popular{
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: f.rem(36);
+      @include m.flexbox($wrap: wrap, $gap: f.rem(36));
       }
 }
