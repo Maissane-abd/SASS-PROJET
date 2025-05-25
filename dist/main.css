@@ -1121,6 +1121,7 @@ html.light .site-footer__list li a:hover {
 
 .admin-layout {
   display: flex;
+  text-align: center;
 }
 
 .admin-sidebar {
