@@ -6,7 +6,7 @@
 @use "partials/utilities";
 
 @use "./components/button";
-@use "./components/typo";
+@use "./components/typography";
 
 @use "./components/header";
 @use "./components/hero";
@@ -14,6 +14,6 @@
 @use "./components/footer";
 @use "./components/auth";
 @use "./components/admin";
-@use "./components/popular";
+@use "./components/list";
 @use "./components/faq";
 @use "./components/modal";

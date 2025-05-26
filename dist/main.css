@@ -1262,11 +1262,11 @@ html.light .admin-card {
   outline: none;
 }
 
-.popular__list {
+.list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: stretch;
   gap: 2.25rem;
 }

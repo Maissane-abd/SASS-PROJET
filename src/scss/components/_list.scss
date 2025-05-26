@@ -3,8 +3,6 @@
 @use "../partials/mixins" as m;
 
 
-.popular{
-    &__list {
-      @include m.flexbox($wrap: wrap, $gap: f.rem(36));
-      }
+.list{
+      @include m.flexbox($wrap: wrap, $justify: space-around, $gap: f.rem(36));
 }
