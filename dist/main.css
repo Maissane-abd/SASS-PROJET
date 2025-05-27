@@ -1149,7 +1149,7 @@ html.light .auth label, html.light .auth select {
   color: var(--text-dark);
 }
 
-.admin-layout {
+.container {
   display: flex;
   text-align: center;
 }
@@ -1205,7 +1205,7 @@ html.light .auth label, html.light .auth select {
 }
 
 .admin-main {
-  flex: 1;
+  width: 100%;
 }
 
 .admin-dashboard__cards {

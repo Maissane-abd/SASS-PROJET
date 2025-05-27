@@ -2,10 +2,10 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 
-.admin-layout {
-    display: flex;
-    text-align: center;
-}
+// .admin-layout {
+//     display: flex;
+//     text-align: center;
+// }
   
 .admin-sidebar {
     display: none;
@@ -68,7 +68,7 @@
 }
   
 .admin-main {
-    flex: 1;
+    width: 100%;
  }
   
 .admin-dashboard {

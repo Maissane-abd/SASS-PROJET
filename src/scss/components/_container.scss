@@ -1,0 +1,8 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.container {
+    display: flex;
+    text-align: center;
+}
