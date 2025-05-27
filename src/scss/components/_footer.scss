@@ -2,7 +2,7 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 
-.site-footer {
+.footer {
   
   &__container {
     @include m.flexbox($direction: column, $wrap: wrap, $justify: flex-start, $align: center, $gap: f.rem(0));

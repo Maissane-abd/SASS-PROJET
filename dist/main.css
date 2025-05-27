@@ -1030,7 +1030,7 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .channels-section__container {
+  .channels__container {
     display: flex;
     flex-direction: row;
     flex-wrap: column;
@@ -1039,7 +1039,7 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
     gap: 2.5rem;
   }
 }
-.channels-section__text {
+.channels__text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1050,31 +1050,31 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .channels-section__text {
+  .channels__text {
     width: 40%;
   }
 }
-.channels-section__grid {
+.channels__grid {
   flex: 1 1 60%;
 }
-.channels-section__list {
+.channels__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
-.channels-section__list li a {
+.channels__list li a {
   display: block;
 }
-.channels-section__list li a img {
+.channels__list li a img {
   width: 100%;
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
 }
-.channels-section__list li a img:hover {
+.channels__list li a img:hover {
   transform: scale(1.05);
 }
 
-.site-footer__container {
+.footer__container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1084,34 +1084,34 @@ html.light .header__nav-list a:hover, html.light .header__auth-list a:hover {
   text-align: center;
 }
 @media screen and (min-width: 500px) {
-  .site-footer__container {
+  .footer__container {
     max-width: 75rem;
     margin: 0 auto;
     display: block;
   }
 }
-.site-footer__columns {
+.footer__columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr));
   gap: 1.875rem;
 }
-.site-footer__list li {
+.footer__list li {
   margin-bottom: 0.5rem;
 }
-.site-footer__list li a {
+.footer__list li a {
   color: var(--grey-light);
   transition: color 0.3s ease;
 }
-.site-footer__list li a:hover {
+.footer__list li a:hover {
   color: var(--primary);
 }
-html.light .site-footer__list li a {
+html.light .footer__list li a {
   color: var(--grey);
 }
-html.light .site-footer__list li a:hover {
+html.light .footer__list li a:hover {
   color: var(--primary);
 }
-.site-footer__bottom {
+.footer__bottom {
   text-align: center;
   border-top: 1px solid var(--grey-light);
   color: var(--grey);

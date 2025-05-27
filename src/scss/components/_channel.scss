@@ -2,7 +2,7 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 
-.channels-section {
+.channels {
     
   &__container {  
     @media screen and (min-width: f.screen("desktop-up")) {
