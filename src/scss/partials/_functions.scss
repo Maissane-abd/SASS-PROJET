@@ -1,10 +1,13 @@
-@use "sass:map";
-@use "variables" as v;
+@use "sass:map"; // Importe le module Sass natif pour manipuler des maps (ex: map.get)
+@use "variables" as v; // Importe les variables définies dans le fichier "variables" et les associe à l'alias "v"
 
+// Fonction personnalisée pour convertir une valeur en pixels vers rem
 @function rem($value) {
 	@return calc($value / 16) * 1rem;
 }
 
+// Fonction pour récupérer la valeur d’un breakpoint depuis la map de breakpoints
+// Utilise map.get pour retourner la valeur du breakpoint correspondant à la clé donnée
 @function screen($key) {
 	@return map.get(v.$breakpoints, $key);
 }

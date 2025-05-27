@@ -1,6 +1,7 @@
 @use "./functions" as f;
 @use "./variables" as v;
 
+// Mixin pour une image ou un élément avec fond en couverture, adapté aux écrans larges
 @mixin background-cover {
   background-size: contain; 
   background-repeat: no-repeat;
@@ -11,6 +12,7 @@
   aspect-ratio: 2100 / 700; 
 }
 
+// Variante mobile du mixin précédent avec positionnement centré
 @mixin background-coverMobile {
   background-size: contain;
   background-repeat: no-repeat;
@@ -19,6 +21,7 @@
   aspect-ratio: 2100 / 700;
 }
   
+// Mixin pour réinitialiser les styles d’un header (ex: position fixe ou sticky)
 @mixin headerReset {
   top: 0;
   left: 0;
@@ -27,22 +30,15 @@
   box-shadow: 0 f.rem(2) f.rem(4) rgba(0, 0, 0, 0.1);
 }
   
+// Mixin pour les conteneurs d’authentification (login, register, etc.)
 @mixin resetAuth {
   max-width: f.rem(400);
   margin: f.rem(0) auto;
   border-radius: f.rem(8);
   height: 100%;
 }
-  
-// @mixin flexbox($direction, $wrap, $justify, $align, $gap: f.rem(0)) {
-//   display: flex;
-//   flex-direction: $direction;
-//   flex-wrap: $wrap;
-//   justify-content: $justify;
-//   align-items: $align;
-//   gap: $gap;
-// }
 
+// Mixin générique pour générer une flexbox rapidement avec des paramètres personnalisables
 @mixin flexbox($display: flex, $direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch, $gap: 0) {
 	display: $display;
 	flex-direction: $direction;
@@ -51,12 +47,13 @@
 	align-items: $align;
 	gap: $gap;
 }
-
   
+// Mixin pour simplifier l’application de transitions CSS
 @mixin transition($props...) {
   transition: $props;
 }
   
+// Mixin pour uniformiser les styles de boutons dans le site
 @mixin resetButton {
   display: inline-block;
   line-height: 1;
