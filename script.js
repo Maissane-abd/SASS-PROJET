@@ -1,47 +1,52 @@
+// Récupère le bouton de bascule du mode clair/sombre
 const toggle = document.getElementById("darkToggle");
+
+// Récupère toutes les questions de la FAQ
 const questions = document.querySelectorAll('.faq__question');
+
+// Récupère la modale et son contenu
 const modal = document.getElementById('anime-modal');
 const modalContent = document.querySelector('.modal__content');
 
-
+// Événement au clic sur le bouton de thème (mode clair/sombre)
 toggle.addEventListener("click", () => {
+  // Ajoute ou enlève la classe 'light' sur le document
   document.documentElement.classList.toggle("light");
-
   const isDark = document.documentElement.classList.contains("dark");
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-  const theme = localStorage.getItem("theme");
-  if (theme === "dark") {
-    document.documentElement.classList.add("dark");
-  }
-});
-
+// Ajoute un événement à chaque question de la FAQ
 questions.forEach((btn) => {
   btn.addEventListener('click', () => {
-    const answer = btn.nextElementSibling;
-    const icon = btn.querySelector('.faq__icon');
+    const answer = btn.nextElementSibling;         // Réponse associée
+    const icon = btn.querySelector('.faq__icon');  // Icône dans la question
 
+    // Ferme toutes les autres réponses actives
     document.querySelectorAll('.faq__answer').forEach((el) => {
       if (el !== answer) el.classList.remove('active');
     });
 
+    // Désactive toutes les autres icônes actives
     document.querySelectorAll('.faq__icon').forEach((i) => {
       if (i !== icon) i.classList.remove('active-icon');
     });
 
+    // Active/désactive la réponse et l'icône de la question cliquée
     answer.classList.toggle('active');
     icon.classList.toggle('active-icon');
   });
 });
 
+// Pour chaque carte d'anime
 document.querySelectorAll('.list__card').forEach(card => {
   const button = card.querySelector('.list__image');
   button.addEventListener('click', (e) => {
     e.preventDefault();
+    // Récupère le titre de l'anime
     const title = card.querySelector('.list__name').innerText;
     
+    // Résumés fictifs d'animes
     const fakeSummaries = {
       "Dragon Ball": "Goku, un jeune garçon doté d'une force surhumaine, part à l'aventure.",
       "One Piece": "Luffy rêve de devenir le Roi des Pirates et cherche le trésor One Piece.",
@@ -50,6 +55,7 @@ document.querySelectorAll('.list__card').forEach(card => {
       "The Apothecary Diaries": "Une servante rusée utilise son talent d'herboriste pour résoudre des mystères."
     };
 
+    // Notes fictives
     const fakeRatings = {
       "Dragon Ball": "⭐ 8.4/10",
       "One Piece": "⭐ 9.1/10",
@@ -58,10 +64,12 @@ document.querySelectorAll('.list__card').forEach(card => {
       "The Apothecary Diaries": "⭐ 8.9/10"
     };
 
+    // Injecte les infos dans la modale
     document.getElementById('modal-title').innerText = title;
     document.getElementById('modal-summary').innerText = fakeSummaries[title] || "Résumé indisponible.";
     document.getElementById('modal-rating').innerText = fakeRatings[title] || "";
 
+    // Affiche la modale
     document.getElementById('anime-modal').style.display = 'block';
   });
 });
