@@ -2,70 +2,8 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 
-// .admin-layout {
-//     display: flex;
-//     text-align: center;
-// }
   
-.admin-sidebar {
-    display: none;
-    z-index: 1;
 
-    @media screen and (min-width: f.screen("desktop-up")) {
-        display: block;
-        // background-color: var(--dark-grey);
-        position: sticky;
-        top: 0;
-        height: 100vh;
-        max-width: f.rem(250);
-
-        html.light & {
-			
-			color: var(--text-dark);
-		  }
-    
-        &__user {
-            font-weight: bold;
-        }
-    
-        &__search {
-            width: 80%;       
-            border: none;
-
-            html.light & {
-                border: 1px solid var(--grey);
-              }
-        }
-    
-        &__item {
-            margin-bottom: 0.75rem;
-            text-align: start;
-        }
-    
-        &__link {
-            color: var(--text-light);
-            text-decoration: none;
-            display: block;
-            padding: 0.5rem;
-            border-radius: f.rem(4);
-            transition: background 0.3s;
-    
-            &:hover {
-                background-color: var(--darkGrey);
-            }
-
-            html.light & {
-                background-color: transparent;
-                color: var(--text-dark);
-
-                &:hover {
-                    background-color: var(--dark-grey);
-                    color: var(--text-light);
-                }
-              }
-        }
-    }
-}
   
 .admin-main {
     width: 100%;

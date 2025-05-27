@@ -1154,36 +1154,36 @@ html.light .auth label, html.light .auth select {
   text-align: center;
 }
 
-.admin-sidebar {
+.sidebar {
   display: none;
   z-index: 1;
 }
 @media screen and (min-width: 1024px) {
-  .admin-sidebar {
+  .sidebar {
     display: block;
     position: sticky;
     top: 0;
     height: 100vh;
     max-width: 15.625rem;
   }
-  html.light .admin-sidebar {
+  html.light .sidebar {
     color: var(--text-dark);
   }
-  .admin-sidebar__user {
+  .sidebar__user {
     font-weight: bold;
   }
-  .admin-sidebar__search {
+  .sidebar__search {
     width: 80%;
     border: none;
   }
-  html.light .admin-sidebar__search {
+  html.light .sidebar__search {
     border: 1px solid var(--grey);
   }
-  .admin-sidebar__item {
+  .sidebar__item {
     margin-bottom: 0.75rem;
     text-align: start;
   }
-  .admin-sidebar__link {
+  .sidebar__link {
     color: var(--text-light);
     text-decoration: none;
     display: block;
@@ -1191,14 +1191,14 @@ html.light .auth label, html.light .auth select {
     border-radius: 0.25rem;
     transition: background 0.3s;
   }
-  .admin-sidebar__link:hover {
+  .sidebar__link:hover {
     background-color: var(--darkGrey);
   }
-  html.light .admin-sidebar__link {
+  html.light .sidebar__link {
     background-color: transparent;
     color: var(--text-dark);
   }
-  html.light .admin-sidebar__link:hover {
+  html.light .sidebar__link:hover {
     background-color: var(--dark-grey);
     color: var(--text-light);
   }
