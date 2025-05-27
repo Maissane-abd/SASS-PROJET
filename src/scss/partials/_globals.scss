@@ -4,36 +4,40 @@
 @use "sass:color";
 
 @layer base {
+
+	// Définition des variables CSS globales dans :root
 	:root {
+		// Génère dynamiquement les variables CSS depuis la var $colors
 		@each $name, $value in v.$colors {
 			--#{$name}: #{$value};
 			--#{$name}-hover: #{color.scale($value, $lightness: 15%)};
 		}
 
+		// Variables supplémentaires globales
 		--bg-light: var(--white);
 		--bg-dark: var(--black);
 		--text-light: var(--white);
 		--text-dark: var(--black);
-
 		--main-radius: f.rem(6);
-
 		--primary:var(--crunchy-orange);
 		--primary-hover:var(--crunchy-orange-hover);
-
 		--bg-header:var(--noir-header);	
 		--grey-light: var(--grey-medium);	
 	}
 
+	// Style global du body
 	body {
 		font-family: fonts.$font1;
 		color: var(--text-light);
 		background-color: var(--bg-dark);
 		transition: background-color 0.3s ease, color 0.3s ease;
 		
+		// Pleine hauteur uniquement à partir du desktop
 		@media screen and (min-width: f.screen("desktop-up")) {
 			height: 100vh;
 		}
 
+		// Thème clair (si html a la classe "light")
 		html.light & {
 			background-color: var(--bg-light);
 			color: var(--text-dark);
@@ -119,6 +123,7 @@
 			  } 
 	}
 
+	// Checkbox stylisée
 	input[type="checkbox"] {
         appearance: none;
         width: f.rem(10);
@@ -145,6 +150,7 @@
 		  } 
 	}
 	
+	// Animation d’apparition (fade-in)
 	@keyframes fadeIn {
 	  from {
 	  opacity: 0;

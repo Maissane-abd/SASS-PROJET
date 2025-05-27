@@ -1,3 +1,4 @@
+// Couleurs utilisée dans le projet
 $colors: (
   "black": #000,
   "dark-grey": #1a1a1a,
@@ -15,6 +16,7 @@ $colors: (
     
 );
 
+// Points de rupture (breakpoints) pour le responsive design
 $breakpoints: (
   "phone-down": 500px,
   "tablet-up": 768px,
@@ -30,5 +32,6 @@ $colorModifiers: (
 	"danger": "red",
 );
 
+// Valeur de base pour le spacing (utilisée dans les marges, paddings, etc.)
 $spacing: 0.25rem;
 

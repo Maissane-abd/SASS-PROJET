@@ -1,5 +1,6 @@
 @use "variables" as v;
 
+// Définit un map pour raccourcir les noms de direction (t = top, b = bottom, etc.)
 $suffixes: (
 	t: top,
 	b: bottom,
@@ -8,6 +9,7 @@ $suffixes: (
 );
 
 @layer utilities {
+	// Génère des classes d'espacement de 0 à 12 pour les marges et paddings
 	@for $i from 0 through 12 {
 		.m-#{$i} {
 			margin: $i * v.$spacing;
