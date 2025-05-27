@@ -1204,6 +1204,25 @@ html.light .auth label, html.light .auth select {
   }
 }
 
+.note {
+  width: 21.875rem;
+}
+.note__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.75rem;
+}
+.note__input, .note__textarea {
+  border-radius: 0.375rem;
+  border: 1px solid var(--grey-light);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  outline: none;
+}
+
 .admin-main {
   width: 100%;
 }
@@ -1241,25 +1260,6 @@ html.light .admin-card {
   color: var(--text-dark);
   text-align: center;
   word-break: break-word;
-}
-
-.admin-note {
-  width: 21.875rem;
-}
-.admin-note__form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 0.75rem;
-}
-.admin-note__input, .admin-note__textarea {
-  border-radius: 0.375rem;
-  border: 1px solid var(--grey-light);
-  background-color: var(--bg-light);
-  color: var(--text-dark);
-  outline: none;
 }
 
 .list {
