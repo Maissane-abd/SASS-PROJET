@@ -1204,6 +1204,35 @@ html.light .auth label, html.light .auth select {
   }
 }
 
+.card {
+  background: var(--bg-light);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  color: var(--text-dark);
+  min-width: 0;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+}
+html.light .card {
+  border: 1px solid var(--black);
+}
+.card__title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.card__info {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  text-align: center;
+  word-break: break-word;
+}
+
 .note {
   width: 21.875rem;
 }
@@ -1231,35 +1260,6 @@ html.light .auth label, html.light .auth select {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
-}
-
-.admin-card {
-  background: var(--bg-light);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
-  color: var(--text-dark);
-  min-width: 0;
-  word-wrap: break-word;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0;
-}
-html.light .admin-card {
-  border: 1px solid var(--black);
-}
-.admin-card__title {
-  font-size: 1.2rem;
-  text-align: center;
-}
-.admin-card__info {
-  font-size: 0.95rem;
-  color: var(--text-dark);
-  text-align: center;
-  word-break: break-word;
 }
 
 .list {

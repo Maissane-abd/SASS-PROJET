@@ -1,0 +1,35 @@
+@use "../partials/mixins" as m;
+@use "../partials/variables" as v;
+@use "../partials/functions" as f;
+
+.card {
+    background: var(--bg-light);
+    border-radius: f.rem(8);
+    padding: 1rem;
+    box-shadow: 0 f.rem(2) f.rem(6) rgba(0, 0, 0, 0.05);
+    color: var(--text-dark);
+    min-width: 0; 
+    word-wrap: break-word;
+    @include m.flexbox($direction: column, $align:center);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+
+    html.light & {
+        // background-color: transparent;
+        // color: var(--text-dark);
+        border: 1px solid var(--black);
+      } 
+  
+    &__title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  
+    &__info {
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      text-align: center;
+      word-break: break-word; 
+    }
+}
