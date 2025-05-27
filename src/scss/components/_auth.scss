@@ -14,8 +14,6 @@
  
    &__form {
     @include m.flexbox($direction: column);
-    //  display: flex;
-    //  flex-direction: column;
    }
 
    &__check {

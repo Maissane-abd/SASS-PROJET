@@ -6,8 +6,7 @@
     @include m.headerReset;
 
     &__container {
-      @media screen and (min-width: f.screen("desktop-up")) {
-      // @include m.flexbox(row, nowrap, space-between, center, f.rem(0));   
+      @media screen and (min-width: f.screen("desktop-up")) { 
       @include m.flexbox($direction: row, $wrap: nowrap, $justify: space-between, $align: center,  $gap: f.rem(0));
       }
     }
@@ -15,16 +14,12 @@
     &__left,
     &__right {  
       @media screen and (min-width: f.screen("desktop-up"))  {
-        // display: flex;
-        // align-items: center;
          @include m.flexbox($align: center);
       }
     }
     
     &__logo {
       @include m.flexbox($justify: center);
-      // display: flex;
-      // justify-content: center;
       
       img {
         height: 6rem;

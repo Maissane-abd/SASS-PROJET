@@ -8,14 +8,12 @@
 
     @media screen and (min-width: f.screen("desktop-up")) {
         display: block;
-        // background-color: var(--dark-grey);
         position: sticky;
         top: 0;
         height: 100vh;
         max-width: f.rem(250);
 
         html.light & {
-			
 			color: var(--text-dark);
 		  }
     

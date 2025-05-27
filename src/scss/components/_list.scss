@@ -2,7 +2,6 @@
 @use "../partials/functions" as f;
 @use "../partials/mixins" as m;
 
-
 .list{
       @include m.flexbox($wrap: wrap, $justify: space-around, $gap: f.rem(36));
 }

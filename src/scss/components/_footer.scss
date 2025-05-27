@@ -5,7 +5,6 @@
 .site-footer {
   
   &__container {
-    // @include m.flexbox(column, wrap, flex-start, center, f.rem(0)); 
     @include m.flexbox($direction: column, $wrap: wrap, $justify: flex-start, $align: center, $gap: f.rem(0));
     text-align: center;
     

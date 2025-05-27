@@ -11,13 +11,8 @@
     min-width: 0; 
     word-wrap: break-word;
     @include m.flexbox($direction: column, $align:center);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
 
     html.light & {
-        // background-color: transparent;
-        // color: var(--text-dark);
         border: 1px solid var(--black);
       } 
   
