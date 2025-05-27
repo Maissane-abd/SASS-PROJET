@@ -1230,6 +1230,28 @@ html.light .card {
   word-break: break-word;
 }
 
+.datatable {
+  width: 100%;
+  overflow-x: auto;
+}
+.datatable table {
+  min-width: 600px; /* ou + si besoin */
+  width: 100%;
+  border-collapse: collapse;
+}
+.datatable th,
+.datatable td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .datatable table {
+    min-width: 500px;
+  }
+}
+
 .note {
   width: 21.875rem;
 }
