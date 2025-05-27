@@ -2,15 +2,17 @@
 @use "../partials/variables" as v;
 @use "../partials/functions" as f;
 
+// Déclaration d'une classe générique "typo" pour centraliser tous les styles typographiques et couleurs
 .typo {
 
+  // Définition des tailles de police en version mobile par défaut
   &-xs { font-size: f.rem(12); }
   &-sm { font-size: f.rem(14); }
   &-m  { font-size: f.rem(16); }
   &-l  { font-size: f.rem(20); }
-  &-xl { font-size: f.rem(26); }
   &-xl { font-size: f.rem(32); }
 
+  // Re-définition des tailles de police pour les écrans larges (desktop et +)
   @media screen and (min-width: f.screen("desktop-up")) {
     &-xs { font-size: f.rem(14); }
     &-sm { font-size: f.rem(16); }
@@ -20,16 +22,20 @@
     &-xxl { font-size: f.rem(48); }
   }
 
+  // Définition des couleurs de texte
   &-primary   { color: white; }
   &-secondary { color: #f47521; }
   &-third     { color: blue; }
   &-fourth     { color: grey; }
   &-green     { color: #19AA79; }
+
+  // Définition de couleurs de fond pour différents contextes
   &-bg { background-color:var(--bg-header); }
   &-nav-admin { background-color: #08090B; }
   &-side-admin { background-color: #1A1A1A; }
   &-bg-admin {background-color: #6C757D;}
 
+  // Variante claire du thème (light mode), styles différents selon l'état du <html>
   html.light & {
     &-primary   { color: black; }
     &-secondary { color: black; }

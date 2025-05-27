@@ -880,9 +880,6 @@
   font-size: 1.25rem;
 }
 .typo-xl {
-  font-size: 1.625rem;
-}
-.typo-xl {
   font-size: 2rem;
 }
 @media screen and (min-width: 1024px) {
