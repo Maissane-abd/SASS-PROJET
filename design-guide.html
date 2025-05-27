@@ -21,11 +21,11 @@
     <section>
         <h2>.typo</h2>
         <p class=".typo typo-xs typo-primary">Lorem ipsum dolor sit amet.</p>
-        <p class=".typo typo-s typo-primary">Lorem ipsum dolor sit amet.</p>
-        <p class=".typo typo-m typo-secondary">Lorem ipsum dolor sit amet.</p>
-        <p class=".typo typo-l typo-secondary">Lorem ipsum dolor sit amet.</p>
-        <p class=".typo typo-xl typo-third">Lorem ipsum dolor sit amet.</p>
-        <p class=".typo typo-xxl typo-third">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-s typo-secondary">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-m typo-third">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-l typo-fourth">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-xl typo-green">Lorem ipsum dolor sit amet.</p>
+        <p class=".typo typo-xxl">Lorem ipsum dolor sit amet.</p>
     </section>
     <hr/>
     <section>
@@ -130,7 +130,7 @@
     </section>
     <hr/>
     <section>
-        <h2>.hero</h2>
+        <h2>.hero__banner</h2>
         <p class="hero__banner"></p>
     </section>
     <hr/>
@@ -232,11 +232,11 @@
     </section>
     <hr/>
     <section>
-        <h2>.list__card</h2>
-        <div class="popular__card p-0">
-          <a href=""><img src="./assets/anime2.jpg" alt="One Piece" class="popular__image"></a>
-          <h3 class="popular__name typo-m m-1">One Piece</h3>
-          <p class="popular__version typo-xs m-1 typo-fourth">VOSTFR / VF</p>
+        <h2>.list__card + modal au clique</h2>
+        <div class="list__card p-0">
+          <a href=""><img src="./assets/anime2.jpg" alt="One Piece" class="list__image"></a>
+          <h3 class="list__name typo-m m-1">One Piece</h3>
+          <p class="list__version typo-xs m-1 typo-fourth">VOSTFR / VF</p>
           <a href="#" class="button button-s button-secondary">Regarder</a>
         </div>
 
@@ -247,8 +247,42 @@
             <p id="modal-summary" class="modal__summary mb-2 typo-primary"></p>
             <p id="modal-rating" class="modal__rating typo-secondary"></p>
           </div>
+
         </div>  
     </section>
+    <hr/>
+    <section class="note mt-9">
+      <h2 class="note__title typo-xl">.note</h2>
+      <form class="note__form">
+        <input type="text" class="note__input" placeholder="Titre" />
+        <textarea class="note__textarea" rows="6" placeholder="Qu'avez-vous en tête ?"></textarea>
+        <button type="submit" class="button button-secondary button-l">Enregistrer le brouillon</button>
+      </form>
+    </section>
+    <hr/>
+    <section>
+      <h2>.card</h2>
+    <div class="card">
+      <h2 class="card__title">Utilisateurs</h2>
+      <p class="card__info">153 nouveaux ce mois </p>
+    </div>
+  </section>
+  <hr/>
+  <section class="faq pl-12 pr-12">
+    <h2 class="faq__title typo-xl mt-12">.faq</h2>
+    <div class="faq__item">
+      <button class="faq__question typo-primary p-4">Comment fonctionne l’abonnement ? <span class="faq__icon">🔽</span></button>
+      <div class="faq__answer">
+        <p>L’abonnement vous donne accès à tout le catalogue en illimité et sans pub.</p>
+      </div>
+    </div>
+    <div class="faq__item">
+      <button class="faq__question typo-primary p-4">Puis-je annuler à tout moment ? <span class="faq__icon">🔽</span></button>
+      <div class="faq__answer">
+        <p>Oui, vous pouvez annuler depuis votre compte à tout moment sans frais.</p>
+      </div>
+    </div>
+  </section>
     <script src="./script.js"></script>
 </body>
 </html>

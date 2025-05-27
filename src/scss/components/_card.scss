@@ -8,6 +8,7 @@
     padding: 1rem;
     box-shadow: 0 f.rem(2) f.rem(6) rgba(0, 0, 0, 0.05);
     color: var(--text-dark);
+    max-width: f.rem(300);
     min-width: 0; 
     word-wrap: break-word;
     @include m.flexbox($direction: column, $align:center);

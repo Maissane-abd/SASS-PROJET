@@ -36,11 +36,11 @@ questions.forEach((btn) => {
   });
 });
 
-document.querySelectorAll('.popular__card').forEach(card => {
-  const button = card.querySelector('.popular__image');
+document.querySelectorAll('.list__card').forEach(card => {
+  const button = card.querySelector('.list__image');
   button.addEventListener('click', (e) => {
     e.preventDefault();
-    const title = card.querySelector('.popular__name').innerText;
+    const title = card.querySelector('.list__name').innerText;
     
     const fakeSummaries = {
       "Dragon Ball": "Goku, un jeune garçon doté d'une force surhumaine, part à l'aventure.",
